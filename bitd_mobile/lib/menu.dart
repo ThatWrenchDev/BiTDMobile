@@ -1,5 +1,6 @@
 // Page to list all created character sheets
 
+import 'package:bitd_mobile/sheet.dart';
 import 'package:flutter/material.dart';
 
 class Menu extends StatelessWidget {
@@ -24,7 +25,7 @@ class Menu extends StatelessWidget {
           // open character sheet page
           Navigator.push(
             context,
-            MaterialPageRoute(builder: (context) => const Menu()),
+            MaterialPageRoute(builder: (context) => const SheetTabs()),
           );
         },
       ),
@@ -34,7 +35,7 @@ class Menu extends StatelessWidget {
           // open character sheet page
           Navigator.push(
             context,
-            MaterialPageRoute(builder: (context) => const Menu()),
+            MaterialPageRoute(builder: (context) => const SheetTabs()),
           );
         },
       )
